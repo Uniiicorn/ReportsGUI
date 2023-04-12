@@ -1,0 +1,20 @@
+name: $name
+version: $version
+author: CFUnicorn
+website: https://cf-unicorn.com/go/reportsgui
+api-version: 1.17
+main: com.cfunicorn.reportsgui.main.Main
+commands:
+  report:
+    usage: /report <Player>
+  reports:
+    usage: /reports
+  viewreport:
+    description: do NOT use this command, if you want to view a report please use the /reports command
+  teamchat:
+    usage: /teamchat
+    aliases: tc
+  warn:
+    usage: /warn <Player> <Reason>
+  profile:
+    usage: /profile <Player>

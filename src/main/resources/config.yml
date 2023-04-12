@@ -1,0 +1,85 @@
+Settings:
+  Prefix: '&cReport &7>>'
+  NoPerm: '&cYou are not allowed to do that.'
+  DateTimeFormat: 'dd/MM/yyyy HH:mm:ss'
+  Permissions:
+    ViewReports: 'rg.reports.view'
+    TeamChat: 'rg.teamchat'
+    WarnPlayers: 'rg.warnplayers'
+    ViewProfile: 'rg.profile.view'
+    HandleReports:
+      Ban:
+        Temporary: 'rg.reports.ban.temp'
+        Permanent: 'rg.report.ban.perm'
+      Mute: 'rg.reports.mute'
+      Delete: 'rg.reports.delete'
+ReportReasons:
+- Hacking
+- Griefing
+- Skin
+- Username
+- Language
+# Do NOT add more than 27 Reasons, as this will cause the Plugin to break
+# Why Would you need so many anyways?! D:
+Messages:
+  CMD_Report:
+    Usage: '&7Please use /&creport &7<&cPlayer&7>'
+    NoValidPlayer: '&7Player &c%PLAYER% &7does not exist.'
+    CantReport: '&7You can not report &c%PLAYER%&7. They have already been reported.'
+    ReportSuccessful: '&7You successfully reported &c%PLAYER%&7. &7Reason: &c%REASON%'
+  CMD_Warn:
+    Usage: '&7Please use /&cwarn &7<&cPlayer&7> <&cReason&7>'
+    NoValidPlayer: '&7Player &c%PLAYER% &7does not exist.'
+    NoValidReason: '&7Reason &c%REASON% &7does not exist.'
+    WarnSuccessful: '&7Player &c%PLAYER% &7has been warned successfully. Reason: &c%REASON%'
+  CMD_Profile:
+    Usage: '&7Please use /&cprofile &7<&cPlayer&7>'
+    NoValidPlayer: '&7Player &c%PLAYER% &7does not exist.'
+  Banned: '&7You have been &cbanned&7. &7Reason: &c%REASON% &7Your ban will expire on: &c%DATE%'
+  Muted: '&7You have been &6Muted&7. (Reason: &6%REASON%&7)'
+  Kicked: '&7You have been &6Kicked&7. (Reason: &6%REASON%&7)'
+  Frozen: '&7You have been &6Frozen&7. (Reason: &6%REASON%&7)'
+  ReportHandled: '&7The Report with the ID &c%ID% &7has been handled successfully.'
+  PlayerPunished: '&7Player &c%PLAYER% &7has been punished successfully.'
+  TeamChat:
+    LoggedIn: '&7You successfully logged into the Teamchat.'
+    LoggedOut: '&7You successfully logged out of the Teamchat.'
+    NotLoggedIn: '&7You may not use this now. You are not logged into the Teamchat.'
+  GUIs:
+    ViewReports:
+      ReportedBy: '&7Reported by: &c%PLAYER%'
+      ReportedReason: '&7Reason: &c%REASON%'
+      ReportedTime: '&7Date and Time: &c%TIMESTAMP%'
+    ReportDetails:
+      BanPlayer: '&7Ban Player (Duration: &c%DURATION%&7)'
+      MutePlayer: '&7Mute Player (Duration: &cPermanent&7)'
+      KickPlayer: '&7Kick this Player'
+      FreezePlayer: '&7Freeze this Player'
+      DeleteReport: '&7Delete this Report'
+      TeleportPlayer: '&7Teleport to &c%PLAYER%'
+    Profile:
+      Active: '&aActive'
+      NotActive: '&cNot Active'
+      BanStatus:
+        Title: '&7Ban-Status'
+        Description:
+          - '&7Ban this Player'
+          - '&7Ban-Duration: &cPermanent'
+      MuteStatus:
+        Title: '&7Mute-Status'
+        Description:
+          - '&7Mute this Player'
+          - '&7Mute-Duration: &cPermanent'
+      FreezeStatus:
+        Title: '&7Frozen-Status'
+        Description:
+          - '&7Freeze this Player'
+      TeleportPlayer: '&7Teleport to &c%PLAYER%'
+      Unmuted: '&7Player &c%PLAYER% &7has been unmuted.'
+      Unfrozen: '&7Player &c%PLAYER% &7has been unfrozen.'
+  ReportNotification:
+    MainMessage: '&7There is a new Report available! '
+    ClickEvent: '&7[&cClick me&7]'
+  WarnNotification:
+    MainMessage: '&7%PLAYER% just warned &c%TARGET%.'
+    HoverEvent: '&7Reason: &c%REASON%'

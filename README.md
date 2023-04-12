@@ -1,7 +1,6 @@
 ![Logo](https://i.imgur.com/eqxbTDP.png)
 
 
-## Badges
 
 [![MIT License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge&logo=appveyor)](https://choosealicense.com/licenses/mit/)
 
